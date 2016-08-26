@@ -2,8 +2,8 @@
 <?php require_once('../includes/functions.php')?>
 <?php include('../includes/layouts/header.php')?>
 		
-			<div class="row" id="page-content">				
-				<?php include('../includes/layouts/sidebar.php')?>
+			<div class="row" id="page-content">			
+				<?php /*Sidebar*/ include('../includes/layouts/sidebar.php')?>
 
 				<section class="container column col-6" id="main-content">
 					
@@ -12,8 +12,9 @@
 					
 					<div id="recent-posts">
 					
-						<?php 
+				<?php   //Get available categories
 						$available_categories = get_categories();
+						
 						foreach( $available_categories as $available ){
 							$post_cat_id = $available['category_id'];
 							$post_set = get_posts_for_category( $post_cat_id );
@@ -26,9 +27,7 @@
 						/*else{
 							echo 'No posts yet';
 						}*/
-						
 						?>			
-					
 					</div><!--recent-posts-->
 					
 				</section><!--main-content-->

@@ -43,7 +43,7 @@ if( isset( $_POST['submit'] ) ){
 			<form id="login-form" action="login.php" method="POST">
 				<p>
 					<label for="username">Username </label>
-					<input type="text" name="username" placeholder="Username" value="<?php echo htmlentities( $username );?>" required />
+					<input type="text" name="username" placeholder="Username" value="<?php echo isset( $username ) ? htmlentities( $username ) : "" ;?>" required />
 				</p>
 				<p>	
 					<label for="password">Password</label>

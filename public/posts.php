@@ -15,7 +15,7 @@ if( !$post ){
 					
 					<h2>Posts</h2>
 					
-					<?php echo $info;?>
+					<?php echo isset($info) ? $info: '';?>
 					<small></small>
 					
 					<div id="single-post">
