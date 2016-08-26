@@ -102,6 +102,7 @@ html,body {
 	#navigation li:not( :first-child ) {
 		width: 100%;
 		display: none;
+		padding-top: 3px;
 	}	
 	#collapser{
 		display: inline-block;
@@ -393,6 +394,9 @@ header {
 }
 #categories .category-status {
 	background: #eff;
+}
+.list{
+	margin: 0; padding: 0;
 }
 #footer {
 	height: 1em;

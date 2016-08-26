@@ -12,7 +12,8 @@ check_logged_in_status();
 			<h2>Admin Menu</h2>
 			<p>Welcome to Admin area<?php echo ', '.htmlentities( $_SESSION['admin_first_name'] );?>.</p>
 			
-			<ul>
+			<h3>Available Options</h3>
+			<ul class="list">
 				<li><a href="manage_content.php">Manage Website Content</a></li>
 				<li><a href="manage_admins.php">Managing Admin Users</a></li>
 				<li><a href="logout.php">Logout</a></li>

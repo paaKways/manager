@@ -1,7 +1,8 @@
-29/07 - Added a mobile responsive menu.
+29/07 
+- Added a mobile responsive menu.
 - styled the 'info' div that displays completed operations or errors.
 - Corrected error when changing categories in edit_post.php
 - Corrected error which doesn't add created time in categories table when creating a new category.
 - Corrected error which allows users to navigate to login.php even when logged in.
-- Made the table in manage_content.php responsive.
+- Made the table in manage_content.php responsive using stackable.js plugin.
 
